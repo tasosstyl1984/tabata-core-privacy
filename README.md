@@ -8,7 +8,7 @@ Public privacy policy for **Tabata Core** (Google Play). Static site: `index.htm
 2. Branch **main**, folder **/ (root)**.
 3. Your policy URL will be: `https://tasosstyl1984.github.io/tabata-core-privacy/`
 
-Replace **YOUR_EMAIL** in `index.html` before sharing the link in Play Console.
+Contact email is set in `index.html`. Update it there if it changes, then push to `main` so GitHub Pages stays current.
 
 ## First-time push (after you create the empty repo on GitHub)
 
