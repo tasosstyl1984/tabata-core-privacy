@@ -5,91 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tabata Core — Privacy Policy</title>
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.5; max-width: 40rem; margin: 1.5rem auto; padding: 0 1rem; color: #111; }
-    h1 { font-size: 1.35rem; }
-    h2 { font-size: 1.05rem; margin-top: 1.25rem; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.55; max-width: 42rem; margin: 1.5rem auto; padding: 0 1rem 2rem; color: #111; }
+    h1 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.08rem; margin-top: 1.5rem; margin-bottom: 0.35rem; }
+    h3 { font-size: 1rem; margin-top: 1rem; margin-bottom: 0.25rem; }
     p { margin: 0.5rem 0; }
-    ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+    ul { margin: 0.4rem 0 0.6rem; padding-left: 1.25rem; }
+    li { margin: 0.25rem 0; }
+    a { color: #0b57d0; }
+    .meta { color: #444; font-size: 0.95rem; }
+    code { font-size: 0.9em; }
   </style>
 </head>
 <body>
   <h1>Privacy Policy — Tabata Core</h1>
+  <p class="meta"><strong>Effective date:</strong> 21 May 2026<br>
+  <strong>Last updated:</strong> 3 June 2026</p>
 
-  <p><strong>Effective date:</strong> 21 May 2026<br>
-  <strong>Last updated:</strong> 2 June 2026</p>
+  <p>This Privacy Policy explains how <strong>Tabata Core</strong> (Android package <code>com.tabatacore.app</code>) handles information when you install or use the app from <strong>Google Play</strong>. It applies wherever the app is listed, including in the European Economic Area (EEA), the United Kingdom, and other countries.</p>
 
-  <p>This policy describes the Android app <strong>Tabata Core</strong> (package <code>com.tabatacore.app</code>) when you download it from <strong>Google Play</strong>, including in the European Union and other countries or regions where the app is listed.</p>
+  <h2>1. Who we are</h2>
+  <p>Tabata Core is published by the individual developer of the app (the “<strong>we</strong>”, “<strong>us</strong>”, or “<strong>developer</strong>”). We do not operate user accounts or our own servers for storing your workouts.</p>
+  <p><strong>Contact (privacy and data requests):</strong> <a href="mailto:tasos.styl@gmail.com">tasos.styl@gmail.com</a></p>
 
-  <h2>Summary</h2>
-  <p>Tabata Core is a <strong>local workout timer</strong> for Tabata/HIIT and optional reaction training. We do not operate user accounts or backend servers for the app. Your timer settings and saved plans stay on your device; we do not receive them.</p>
-
-  <h2>Who is responsible</h2>
-  <p>The data controller for Tabata Core is the individual developer of the app (contact details below). For privacy questions or requests, email <strong>tasos.styl@gmail.com</strong>.</p>
-
-  <h2>What the app does on your device</h2>
-  <p>Tabata Core is a fullscreen gym timer (sets × reps with work and rest intervals). While you use the app, it may:</p>
+  <h2>2. Summary</h2>
+  <p>Tabata Core is a <strong>local</strong> fullscreen timer for Tabata/HIIT workouts and optional reaction-style training. In the current version:</p>
   <ul>
-    <li>Store timer and display preferences locally (see below).</li>
-    <li>Save optional <strong>Tabata templates</strong> (named workout plans) on your device only.</li>
-    <li>Play <strong>bundled sounds</strong> for interval cues (no upload of audio from you).</li>
-    <li>Keep the <strong>screen awake</strong> during an active workout so the timer stays visible.</li>
-    <li>Use optional <strong>vibration</strong> on button taps when enabled in settings (local only).</li>
-    <li>Run optional <strong>Reaction mode</strong> during work intervals (screen colour changes on a timer you configure). This is display-only on your device; we do not receive it.</li>
-    <li>Show an optional <strong>ongoing workout notification</strong> while a session runs and the app is in the background, displaying phase and countdown on your device only. On Android 13+, you may be asked to <strong>allow notifications</strong> for this feature; we only show workout information generated on your device. On supported Android versions, the notification may appear as a live update—still local only, not sent to us.</li>
-    <li>Optionally <strong>pause the workout</strong> when the device reports an incoming ring or active call, using Android audio mode only. The app does <strong>not</strong> read your phone number, call log, or contacts.</li>
-    <li>After a session ends, show an optional <strong>workout summary</strong> on screen (time, sets/reps completed, skips and restarts). This summary is generated on your device and is <strong>not sent to us</strong>.</li>
-    <li>Optionally keep the <strong>most recent workout summary</strong> on your device so you can open it again from the start screen until you complete another workout or clear app data.</li>
-    <li>If you tap <strong>Share</strong> on that summary, the app creates a one-time <strong>PNG image</strong> in temporary app storage and opens Android’s <strong>system share sheet</strong>. You choose the destination (messages, email, cloud drive, etc.). <strong>We do not receive</strong> the image or summary; any app you share to processes it under its own privacy policy.</li>
-    <li>Optionally <strong>dim the workout screen</strong> while running in Tabata mode (display only; tap to brighten). This preference is stored locally.</li>
+    <li>You are <strong>not required to create an account</strong>.</li>
+    <li>Your workout settings, templates, and session data are stored <strong>on your device</strong> unless you choose to share something using Android’s share feature.</li>
+    <li>We <strong>do not</strong> sell your personal information, show in-app advertising, or use analytics or crash-reporting SDKs that identify you.</li>
+    <li>We <strong>do not</strong> receive your workout data on our own servers.</li>
   </ul>
 
-  <h2>Information stored on your device</h2>
-  <p>We do not operate user accounts. Preferences are saved <strong>only on your device</strong> (Android app storage), for example:</p>
+  <h2>3. Information processed on your device</h2>
+  <p>The app processes the following categories of information <strong>locally</strong> to provide its features:</p>
+
+  <h3>3.1 Workout and app settings</h3>
+  <p>Saved using Android app storage (for example <code>SharedPreferences</code>), including:</p>
   <ul>
-    <li>Tabata structure (sets, reps, work/rest, warmup and cooldown)</li>
-    <li>Saved <strong>Tabata templates</strong> (names and interval settings you choose to keep)</li>
-    <li>Sound, vibration, theme, colours, dimming, and reaction-training options</li>
-    <li>Notification and call-pause settings</li>
-    <li>An optional <strong>workout resume checkpoint</strong> if the app is closed during an active session (phase and timers), until the workout ends or you clear app data</li>
-    <li>The optional <strong>last completed workout summary</strong> (for reopening from the start screen), until replaced or cleared</li>
+    <li>Tabata structure: sets, reps, work/rest durations, optional warmup and cooldown</li>
+    <li>Saved <strong>Tabata templates</strong> (names and interval settings you keep)</li>
+    <li>Sound, vibration, theme, colours, screen dimming, and reaction-training options</li>
+    <li>Notification, wake-lock, and phone-call pause preferences</li>
   </ul>
-  <p>This information is used to run the app and restore your settings. <strong>We do not receive it on our servers.</strong> It remains on your device until you <strong>clear app storage</strong> or <strong>uninstall</strong> the app.</p>
-  <p>The app does not maintain a long-term workout history database. End-of-session summaries are shown after a workout; only the most recent summary may be kept locally for convenience (unless you share an image using Share, as described above). Temporary share images may remain in app cache until the system clears them.</p>
 
-  <h2>Data we do not collect</h2>
-  <p>In the current published app we do <strong>not</strong>:</p>
+  <h3>3.2 Active workout and resume</h3>
   <ul>
-    <li>Ask for your name, email, or phone number inside the app</li>
-    <li>Use advertising, analytics, or identity-linked crash-reporting SDKs</li>
-    <li>Access contacts, your photo gallery, precise location, microphone, or camera for app features (Share uses the system picker—you choose where data goes; we do not read your gallery)</li>
-    <li>Sell personal information</li>
+    <li>While a workout runs, the app tracks phase, timers, set/rep progress, and related state in memory and may write an optional <strong>resume checkpoint</strong> if the app is closed mid-session, until the workout ends or you clear app data.</li>
+    <li>After a workout, the app may show a <strong>workout summary</strong> (times, sets/reps, skips, restarts). The app may keep only the <strong>most recent</strong> summary on your device so you can open it again from the start screen until you finish another workout or clear data.</li>
   </ul>
-  <p>If a future update adds features that collect or transmit data (for example cloud backup), we will update this policy and Google Play’s Data safety section before or when those features go live.</p>
+  <p>The app does <strong>not</strong> maintain a long-term workout history database on your device beyond the optional last summary described above.</p>
 
-  <h2>Purchases</h2>
-  <p>If you buy Tabata Core on Google Play, <strong>Google</strong> processes payment. We do not receive your card or bank details. Purchase records are handled under <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</p>
+  <h3>3.3 App version display</h3>
+  <p>The app may read its own version and build number from the device (for example to show “v1.0.1” in Settings). This is used for display only and is not sent to us.</p>
 
-  <h2>Third parties</h2>
-  <p>Installing, updating, and (where applicable) billing are handled by <strong>Google Play</strong> and your device manufacturer under their own terms and policies. We do not control OS-level diagnostic or usage data they may process.</p>
+  <h3>3.4 Share (optional)</h3>
+  <p>If you tap <strong>Share</strong> on a workout summary, the app renders a <strong>PNG image</strong> into temporary app storage and opens Android’s <strong>system share sheet</strong>. You choose the recipient app (messages, email, cloud storage, etc.). <strong>We do not receive</strong> the image or summary. Any app you share with processes data under its own privacy policy.</p>
 
-  <h2>Legal basis (EEA / UK)</h2>
-  <p>Where GDPR or UK GDPR applies, on-device data is processed only to <strong>provide and operate the app</strong> (timer, settings, optional notifications you enable). We do not use it for advertising, profiling, or marketing.</p>
+  <h2>4. Features that use device capabilities</h2>
+  <p>While you use the app, it may use the following <strong>on-device</strong> capabilities. None of these upload your workout data to us:</p>
+  <ul>
+    <li><strong>Audio:</strong> bundled sounds for interval cues (no recording or upload of your voice or environment).</li>
+    <li><strong>Vibration:</strong> optional haptic feedback on button taps when enabled in Settings.</li>
+    <li><strong>Screen wake lock:</strong> keeps the screen on during an active workout so the timer stays visible.</li>
+    <li><strong>Reaction mode (optional):</strong> changes screen colours during work intervals on a timer you configure; display only on your device.</li>
+    <li><strong>Notifications (optional):</strong> an ongoing workout notification while a session runs in the background, showing phase and countdown generated on your device. On Android 13+, the system may ask you to <strong>allow notifications</strong>. On some Android versions the notification may appear as a live update. A foreground service may run while the notification is shown so timing stays reliable when the app is not in the foreground.</li>
+    <li><strong>Phone-call pause (optional):</strong> if enabled, the app may pause when Android reports ringtone or in-call audio mode. The app uses <strong>audio mode only</strong> and does <strong>not</strong> read your phone number, call log, or contacts.</li>
+    <li><strong>Screen dimming (optional):</strong> reduces brightness during Tabata workouts until you tap to brighten; preference stored locally.</li>
+  </ul>
 
-  <h2>Your rights (EEA / UK users)</h2>
-  <p>You may have rights to access, rectify, erase, restrict, or object to processing of personal data, and to lodge a complaint with your local data protection authority. Because we do not hold your workout data on our servers, erasure is achieved by <strong>uninstalling the app</strong> or <strong>clearing app storage</strong> in Android settings. Contact us at the email below for any request.</p>
+  <h2>5. Android permissions</h2>
+  <p>The app requests only permissions needed for the features above, for example:</p>
+  <ul>
+    <li><strong>Vibrate</strong> — optional button haptics</li>
+    <li><strong>Wake lock</strong> — keep screen on during workouts</li>
+    <li><strong>Post notifications</strong> (and, on supported devices, promoted notifications) — optional background workout notification</li>
+    <li><strong>Foreground service</strong> — reliable workout notification while the app is in the background</li>
+  </ul>
+  <p>The app does <strong>not</strong> request access to your contacts, photo gallery, precise location, microphone, or camera for its core features.</p>
 
-  <h2>Age and target audience</h2>
-  <p>On Google Play, Tabata Core is listed for users aged <strong>13 and over</strong> (target age groups: <strong>13–15</strong>, <strong>16–17</strong>, and <strong>18+</strong>). It is a general fitness timer and is <strong>not directed at children under 13</strong>.</p>
-  <p>We do not knowingly collect personal information from anyone. The app does not require an account; workout preferences stay on the device only. If you are a parent or guardian and believe someone under 13 has used the app or contacted us with personal data, email us and we will take appropriate steps.</p>
+  <h2>6. What we do not collect</h2>
+  <p>In the current version of Tabata Core we do <strong>not</strong>:</p>
+  <ul>
+    <li>Ask for your name, email address, or phone number inside the app</li>
+    <li>Use advertising SDKs, analytics SDKs, or identity-linked crash-reporting services</li>
+    <li>Operate cloud backup of your workouts on our servers</li>
+    <li>Sell or rent your personal information</li>
+  </ul>
+  <p>Google Play or your device manufacturer may process limited technical or diagnostic data when you install or update apps; that processing is governed by their policies, not this document.</p>
+
+  <h2>7. Legal basis (EEA / UK)</h2>
+  <p>Where the GDPR or UK GDPR applies, we process on-device information only to <strong>provide and operate the app</strong> you request (timer, settings, optional notifications and related features). We do not use your information for advertising, profiling, or direct marketing.</p>
+  <p>Our legal bases are typically <strong>performance of a contract</strong> (providing the app you download) and <strong>legitimate interests</strong> (operating and improving a secure local timer), balanced against your rights. Where processing depends on your choices (for example enabling notifications or Share), it is based on your <strong>consent</strong> through those system or in-app choices.</p>
+
+  <h2>8. Retention</h2>
+  <p>Information stored by the app remains on your device until you:</p>
+  <ul>
+    <li><strong>clear app storage</strong> or <strong>app cache</strong> in Android settings, or</li>
+    <li><strong>uninstall</strong> the app.</li>
+  </ul>
+  <p>Temporary files created for Share may remain in cache until the system clears them. We do not retain copies on our servers because we do not receive that data.</p>
+
+  <h2>9. Your rights (EEA / UK)</h2>
+  <p>Depending on where you live, you may have rights to access, rectify, erase, restrict, or object to processing of personal data, and to data portability, as well as the right to lodge a complaint with a supervisory authority.</p>
+  <p>Because we do not hold your workout data on our servers, most requests can be fulfilled by <strong>uninstalling the app</strong> or <strong>clearing app storage</strong>. For any other request, contact us at the email above. We will respond within the time required by applicable law (typically one month under GDPR).</p>
+  <p>If you are in the EU, you may also contact your local data protection authority. A list of EU authorities is available from the European Data Protection Board.</p>
+
+  <h2>10. Children and age</h2>
+  <p>On Google Play, Tabata Core is listed for users aged <strong>13 and over</strong> (target age groups: <strong>13–15</strong>, <strong>16–17</strong>, and <strong>18+</strong>). The app is a general fitness timer and is <strong>not directed at children under 13</strong>.</p>
+  <p>We do not knowingly collect personal information from anyone. If you are a parent or guardian and believe a child under 13 has contacted us with personal data, email us and we will take appropriate steps.</p>
   <p>Users aged 13–17 should use the app with a parent or guardian’s permission where required by local law.</p>
 
-  <h2>International use</h2>
-  <p>If you download the app outside your home country, device and Play Store settings may still apply locally. We do not operate a Tabata Core account system or receive your settings on our servers.</p>
+  <h2>11. International use</h2>
+  <p>If you download the app outside your home country, your device and Google Play may still apply local settings. We do not operate a Tabata Core account system and do not receive your settings on our servers in the current version.</p>
 
-  <h2>Changes</h2>
-  <p>We may update this policy. The dates at the top will change when we do. Material changes will be reflected on this page and, where required, in the Google Play listing.</p>
+  <h2>12. Purchases</h2>
+  <p>Tabata Core is <strong>free to download</strong> on Google Play at the time of this policy. If a paid version or in-app purchase is offered in the future, <strong>Google</strong> will process payment. We will not receive your payment card or bank details. Purchase records are handled under <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.</p>
 
-  <h2>Contact</h2>
-  <p>Questions about this policy or the app’s data practices: <strong>tasos.styl@gmail.com</strong></p>
+  <h2>13. Security</h2>
+  <p>We design the app to keep workout data on your device. No method of electronic storage is completely secure; you are responsible for securing your device (screen lock, updates, and careful use of Share).</p>
+
+  <h2>14. Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. The “Last updated” date at the top will change when we do. Material changes will be posted on this page and, where required, reflected in the Google Play store listing and Data safety information.</p>
+  <p>If we introduce features that collect or transmit personal data (for example cloud sync or analytics), we will update this policy <strong>before or when</strong> those features become available.</p>
+
+  <h2>15. Contact</h2>
+  <p>Questions about this Privacy Policy or how Tabata Core handles information:</p>
+  <p><strong>Email:</strong> <a href="mailto:tasos.styl@gmail.com">tasos.styl@gmail.com</a></p>
 </body>
 </html>
