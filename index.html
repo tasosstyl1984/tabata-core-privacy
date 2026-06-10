@@ -20,7 +20,7 @@
 <body>
   <h1>Privacy Policy — Tabata Core</h1>
   <p class="meta"><strong>Effective date:</strong> 21 May 2026<br>
-  <strong>Last updated:</strong> 3 June 2026</p>
+  <strong>Last updated:</strong> 9 June 2026</p>
 
   <p>This Privacy Policy explains how <strong>Tabata Core</strong> (Android package <code>com.tabatacore.app</code>) handles information when you install or use the app from <strong>Google Play</strong>. It applies wherever the app is listed, including in the European Economic Area (EEA), the United Kingdom, and other countries.</p>
 
@@ -47,6 +47,7 @@
     <li>Saved <strong>Tabata templates</strong> (names and interval settings you keep)</li>
     <li>Sound, vibration, theme, colours, screen dimming, and reaction-training options</li>
     <li>Notification, wake-lock, and phone-call pause preferences</li>
+    <li>Optional <strong>StopWatch sync</strong> on/off preference</li>
   </ul>
 
   <h3>3.2 Active workout and resume</h3>
@@ -57,10 +58,20 @@
   </ul>
   <p>We do <strong>not</strong> receive your workout summaries or history on our servers.</p>
 
-  <h3>3.3 App version display</h3>
+  <h3>3.3 StopWatch companion sync (optional)</h3>
+  <p>If you enable <strong>StopWatch sync</strong> and connect a compatible Tabata Core StopWatch over <strong>Bluetooth Low Energy (BLE)</strong>, the app exchanges workout information <strong>directly with that device</strong> while a session runs, for example:</p>
+  <ul>
+    <li>Timer state: phase, remaining time, set/rep index, pause, and optional manual cooldown</li>
+    <li>Optional <strong>motivation text</strong> shown during work intervals (when enabled in the app)</li>
+    <li>Interval sound on/off so phone and watch do not beep at the same time</li>
+    <li>Basic remote commands from the watch (for example pause, resume, stop, or skip)</li>
+  </ul>
+  <p>This data is sent <strong>peer-to-peer over Bluetooth</strong> between your phone and watch. We do <strong>not</strong> operate StopWatch servers and do <strong>not</strong> receive this data. The watch may store its own local settings. BLE is used only for companion sync, <strong>not for location</strong>.</p>
+
+  <h3>3.4 App version display</h3>
   <p>The app may read its own version and build number from the device (for example to show “v1.0.1” in Settings). This is used for display only and is not sent to us.</p>
 
-  <h3>3.4 Share (optional)</h3>
+  <h3>3.5 Share (optional)</h3>
   <p>If you tap <strong>Share</strong> on a workout summary, the app renders a <strong>PNG image</strong> into temporary app storage and opens Android’s <strong>system share sheet</strong>. You choose the recipient app (messages, email, cloud storage, etc.). <strong>We do not receive</strong> the image or summary. Any app you share with processes data under its own privacy policy.</p>
 
   <h2>4. Features that use device capabilities</h2>
@@ -73,6 +84,7 @@
     <li><strong>Notifications (optional):</strong> an ongoing workout notification while a session runs in the background, showing phase and countdown generated on your device. On Android 13+, the system may ask you to <strong>allow notifications</strong>. On some Android versions the notification may appear as a live update. A foreground service may run while the notification is shown so timing stays reliable when the app is not in the foreground.</li>
     <li><strong>Phone-call pause (optional):</strong> if enabled, the app may pause when Android reports ringtone or in-call audio mode. The app uses <strong>audio mode only</strong> and does <strong>not</strong> read your phone number, call log, or contacts.</li>
     <li><strong>Screen dimming (optional):</strong> reduces brightness during Tabata workouts until you tap to brighten; preference stored locally.</li>
+    <li><strong>Bluetooth / Nearby devices (optional):</strong> scan for and connect to a Tabata Core StopWatch for companion sync. Used only when you turn sync on; not used for location or advertising.</li>
   </ul>
 
   <h2>5. Android permissions</h2>
@@ -82,6 +94,7 @@
     <li><strong>Wake lock</strong> — keep screen on during workouts</li>
     <li><strong>Post notifications</strong> (and, on supported devices, promoted notifications) — optional background workout notification</li>
     <li><strong>Foreground service</strong> — reliable workout notification while the app is in the background</li>
+    <li><strong>Bluetooth scan and connect</strong> (Android 12+) — optional Tabata Core StopWatch companion sync; declared as not used for location</li>
   </ul>
   <p>The app does <strong>not</strong> request access to your contacts, photo gallery, precise location, microphone, or camera for its core features.</p>
 
