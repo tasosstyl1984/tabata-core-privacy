@@ -20,7 +20,7 @@
 <body>
   <h1>Privacy Policy — Tabata Core</h1>
   <p class="meta"><strong>Effective date:</strong> 21 May 2026<br>
-  <strong>Last updated:</strong> 11 June 2026</p>
+  <strong>Last updated:</strong> 20 September 2026</p>
 
   <p>This Privacy Policy explains how <strong>Tabata Core</strong> (Android package <code>com.tabatacore.app</code>) handles information when you install or use the app from <strong>Google Play</strong>. It applies wherever the app is listed, including in the European Economic Area (EEA), the United Kingdom, and other countries.</p>
 
@@ -36,6 +36,8 @@
     <li>We <strong>do not</strong> sell your personal information, show in-app advertising, or use analytics or crash-reporting SDKs that identify you.</li>
     <li>We <strong>do not</strong> receive your workout data on our own servers.</li>
     <li>Optional <strong>Tabata Core StopWatch</strong> companion sync uses <strong>Bluetooth</strong> only between your phone and your watch when you turn sync on—not for location, ads, or uploading data to us.</li>
+    <li>Optional <strong>online drills</strong> and <strong>exercise how-to images</strong> are downloaded from a <strong>public GitHub</strong> catalog; the app does <strong>not</strong> upload your workouts or identity with those requests.</li>
+    <li>Optional <strong>progress backup</strong> export/import writes or reads a file you choose on your device (or via Android’s share sheet); that file is <strong>not</strong> uploaded to Tabata Core servers.</li>
   </ul>
 
   <h2>3. Information processed on your device</h2>
@@ -57,8 +59,9 @@
     <li>While a workout runs, the app tracks phase, timers, set/rep progress, and related state in memory and may write an optional <strong>resume checkpoint</strong> if the app is closed mid-session, until the workout ends or you clear app data.</li>
     <li>After a workout, the app may show a <strong>workout summary</strong> (times, sets/reps, skips, restarts). The app keeps the <strong>most recent</strong> summary on your device so you can review it from the start screen until you finish another workout or clear app data.</li>
     <li>The app may also save a <strong>workout history</strong> on your device (up to 300 ended sessions) with charts and past summaries. History is stored locally only and is removed if you uninstall the app or clear app data. You can export history as CSV or clear it from the history screen.</li>
+    <li>You may optionally create a <strong>progress backup</strong> (a <code>.tabataprogress</code> file) from Settings or when reminded on the history screen. Export saves or shares a file you choose (device storage or another app via the system share sheet). Import reads a file you select. Backup contents can include local history and related progress identifiers needed to restore on the same or another install. <strong>We do not receive</strong> the backup file on our servers. Reminder preferences (for example “don’t remind”) are stored on your device only.</li>
   </ul>
-  <p>We do <strong>not</strong> receive your workout summaries or history on our servers.</p>
+  <p>We do <strong>not</strong> receive your workout summaries, history, or progress backups on our servers.</p>
 
   <h3>3.3 StopWatch companion sync (optional)</h3>
   <p>If you enable <strong>StopWatch sync</strong> and connect a compatible Tabata Core StopWatch over <strong>Bluetooth Low Energy (BLE)</strong>, the app exchanges workout information <strong>directly with that device</strong> while a session runs, for example:</p>
@@ -77,6 +80,15 @@
   <h3>3.5 Share (optional)</h3>
   <p>If you tap <strong>Share</strong> on a workout summary, the app renders a <strong>PNG image</strong> into temporary app storage and opens Android’s <strong>system share sheet</strong>. You choose the recipient app (messages, email, cloud storage, etc.). <strong>We do not receive</strong> the image or summary. Any app you share with processes data under its own privacy policy.</p>
 
+  <h3>3.6 Online drills and exercise how-to pack (optional)</h3>
+  <p>If you use <strong>Check for online drills</strong> (or similar) under Templates, or download the optional <strong>exercise how-to</strong> image pack, the app may fetch <strong>public</strong> catalog JSON, workout templates, and illustration files from the public <strong>tabataCoreDrills</strong> repository on GitHub (for example via <code>raw.githubusercontent.com</code> or GitHub Pages). Those requests download content onto your device so you can import templates or view how-to images offline afterward.</p>
+  <ul>
+    <li>Downloaded drills and images are stored in <strong>app storage on your device</strong>.</li>
+    <li>The app does <strong>not</strong> send your workout history, settings, account identity, or progress backup in those requests.</li>
+    <li>GitHub (or your network provider) may see ordinary technical connection data (such as IP address and request timing) under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>; we do not operate that infrastructure and do not receive your workout data through it.</li>
+  </ul>
+  <p>Using online drills or the how-to pack is <strong>optional</strong>. The timer works without them.</p>
+
   <h2>4. Features that use device capabilities</h2>
   <p>While you use the app, it may use the following <strong>on-device</strong> capabilities. None of these upload your workout data to us:</p>
   <ul>
@@ -88,6 +100,7 @@
     <li><strong>Phone-call pause (optional):</strong> if enabled, the app may pause when Android reports ringtone or in-call audio mode. The app uses <strong>audio mode only</strong> and does <strong>not</strong> read your phone number, call log, or contacts.</li>
     <li><strong>Screen dimming (optional):</strong> reduces brightness during Tabata workouts until you tap to brighten; preference stored locally.</li>
     <li><strong>Bluetooth / Nearby devices (optional):</strong> scan for and connect to a Tabata Core StopWatch for companion sync when you choose Scan &amp; pair. Not used for location, advertising, or discovering unrelated devices beyond compatible StopWatch hardware.</li>
+    <li><strong>Internet (optional):</strong> download public online drills and exercise how-to images from GitHub when you choose those features; no upload of your workout data to us.</li>
   </ul>
 
   <h2>5. Android permissions</h2>
@@ -114,7 +127,7 @@
 
   <h2>7. Legal basis (EEA / UK)</h2>
   <p>Where the GDPR or UK GDPR applies, we process on-device information only to <strong>provide and operate the app</strong> you request (timer, settings, optional notifications and related features). We do not use your information for advertising, profiling, or direct marketing.</p>
-  <p>Our legal bases are typically <strong>performance of a contract</strong> (providing the app you download) and <strong>legitimate interests</strong> (operating and improving a secure local timer), balanced against your rights. Where processing depends on your choices (for example enabling notifications, StopWatch sync, granting Nearby devices permission, or Share), it is based on your <strong>consent</strong> through those system or in-app choices.</p>
+  <p>Our legal bases are typically <strong>performance of a contract</strong> (providing the app you download) and <strong>legitimate interests</strong> (operating and improving a secure local timer), balanced against your rights. Where processing depends on your choices (for example enabling notifications, StopWatch sync, granting Nearby devices permission, Share, progress backup export/import, or downloading online drills or how-to images), it is based on your <strong>consent</strong> through those system or in-app choices.</p>
 
   <h2>8. Retention</h2>
   <p>Information stored by the app remains on your device until you:</p>
@@ -122,7 +135,7 @@
     <li><strong>clear app storage</strong> or <strong>app cache</strong> in Android settings, or</li>
     <li><strong>uninstall</strong> the app.</li>
   </ul>
-  <p>Temporary files created for Share may remain in cache until the system clears them. We do not retain copies on our servers because we do not receive that data.</p>
+  <p>Temporary files created for Share or progress backup may remain in cache or user-chosen storage until you delete them or the system clears them. We do not retain copies on our servers because we do not receive that data.</p>
 
   <h2>9. Your rights (EEA / UK)</h2>
   <p>Depending on where you live, you may have rights to access, rectify, erase, restrict, or object to processing of personal data, and to data portability, as well as the right to lodge a complaint with a supervisory authority.</p>
