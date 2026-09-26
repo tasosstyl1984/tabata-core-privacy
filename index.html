@@ -20,7 +20,7 @@
 <body>
   <h1>Privacy Policy — Tabata Core</h1>
   <p class="meta"><strong>Effective date:</strong> 21 May 2026<br>
-  <strong>Last updated:</strong> 20 September 2026</p>
+  <strong>Last updated:</strong> 26 September 2026</p>
 
   <p>This Privacy Policy explains how <strong>Tabata Core</strong> (Android package <code>com.tabatacore.app</code>) handles information when you install or use the app from <strong>Google Play</strong>. It applies wherever the app is listed, including in the European Economic Area (EEA), the United Kingdom, and other countries.</p>
 
@@ -36,6 +36,7 @@
     <li>We <strong>do not</strong> sell your personal information, show in-app advertising, or use analytics or crash-reporting SDKs that identify you.</li>
     <li>We <strong>do not</strong> receive your workout data on our own servers.</li>
     <li>Optional <strong>Tabata Core StopWatch</strong> companion sync uses <strong>Bluetooth</strong> only between your phone and your watch when you turn sync on—not for location, ads, or uploading data to us.</li>
+    <li>Optional <strong>heart-rate monitor</strong> pairing uses a separate <strong>Bluetooth</strong> link to a compatible chest strap or band; BPM and related settings stay on your device (and may be shown on a paired StopWatch during a companion workout).</li>
     <li>Optional <strong>online drills</strong> and <strong>exercise how-to images</strong> are downloaded from a <strong>public GitHub</strong> catalog; the app does <strong>not</strong> upload your workouts or identity with those requests.</li>
     <li>Optional <strong>progress backup</strong> export/import writes or reads a file you choose on your device (or via Android’s share sheet); that file is <strong>not</strong> uploaded to Tabata Core servers.</li>
   </ul>
@@ -52,13 +53,14 @@
     <li>Notification, wake-lock, and phone-call pause preferences</li>
     <li>Optional <strong>StopWatch sync</strong> on/off preference</li>
     <li>A stored <strong>paired watch identifier</strong> (Bluetooth device address) so the app can reconnect to your StopWatch; kept on your device only</li>
+    <li>Optional <strong>heart-rate monitor</strong> preferences: on/off, a stored <strong>paired strap identifier</strong> (and advertised name) for reconnect, optional age / weight / height and zone limits you enter for effort-zone colours and cues, and whether a high-zone voice warning is enabled—all kept on your device only</li>
   </ul>
 
   <h3>3.2 Active workout and resume</h3>
   <ul>
     <li>While a workout runs, the app tracks phase, timers, set/rep progress, and related state in memory and may write an optional <strong>resume checkpoint</strong> if the app is closed mid-session, until the workout ends or you clear app data.</li>
-    <li>After a workout, the app may show a <strong>workout summary</strong> (times, sets/reps, skips, restarts). The app keeps the <strong>most recent</strong> summary on your device so you can review it from the start screen until you finish another workout or clear app data.</li>
-    <li>The app may also save a <strong>workout history</strong> on your device (up to 300 ended sessions) with charts and past summaries. History is stored locally only and is removed if you uninstall the app or clear app data. You can export history as CSV or clear it from the history screen.</li>
+    <li>After a workout, the app may show a <strong>workout summary</strong> (times, sets/reps, skips, restarts, and optional heart-rate averages if a monitor was used). The app keeps the <strong>most recent</strong> summary on your device so you can review it from the start screen until you finish another workout or clear app data.</li>
+    <li>The app may also save a <strong>workout history</strong> on your device (up to 300 ended sessions) with charts and past summaries, including optional heart-rate min / avg / max and a downsampled BPM series when a monitor was connected. History is stored locally only and is removed if you uninstall the app or clear app data. You can export history as CSV or clear it from the history screen.</li>
     <li>You may optionally create a <strong>progress backup</strong> (a <code>.tabataprogress</code> file) from Settings or when reminded on the history screen. Export saves or shares a file you choose (device storage or another app via the system share sheet). Import reads a file you select. Backup contents can include local history and related progress identifiers needed to restore on the same or another install. <strong>We do not receive</strong> the backup file on our servers. Reminder preferences (for example “don’t remind”) are stored on your device only.</li>
   </ul>
   <p>We do <strong>not</strong> receive your workout summaries, history, or progress backups on our servers.</p>
@@ -70,17 +72,27 @@
     <li>Optional <strong>motivation text</strong> shown during work intervals (when enabled in the app)</li>
     <li>Interval sound on/off so phone and watch do not beep at the same time</li>
     <li>Basic remote commands from the watch (for example pause, resume, stop, or skip)</li>
+    <li>Optional live <strong>heart rate</strong> (BPM and effort-zone band) when a heart-rate monitor is enabled on the phone, so the watch can show the same reading</li>
   </ul>
   <p>This data is sent <strong>peer-to-peer over Bluetooth</strong> between your phone and watch. We do <strong>not</strong> operate StopWatch servers and do <strong>not</strong> receive this data. The watch may store its own local settings. BLE is used only for companion sync, <strong>not for location</strong>.</p>
   <p>Sync is <strong>optional</strong> and <strong>user-initiated</strong>. When you tap <strong>Scan &amp; pair</strong> in Settings, Android may ask for <strong>Nearby devices</strong> (Bluetooth scan and connect) permission so the app can find your watch. You can decline; the rest of Tabata Core still works without a paired watch. While a workout runs, companion timer updates may continue locally over Bluetooth when the app is in the background (for example alongside the optional workout notification)—still only between your phone and watch.</p>
 
-  <h3>3.4 App version display</h3>
+  <h3>3.4 Heart-rate monitor (optional)</h3>
+  <p>If you enable <strong>Heart rate</strong> in Settings and pair a compatible BLE chest strap or band (standard Heart Rate profile), the app may:</p>
+  <ul>
+    <li>Scan for and connect to that monitor over a <strong>separate Bluetooth link</strong> from the StopWatch companion (when both are used)</li>
+    <li>Read live <strong>beats per minute (BPM)</strong> during workouts to colour the on-screen chip, optionally speak a high-zone cue, and record session stats in local history</li>
+    <li>Forward live BPM (and zone band) to a paired StopWatch during companion workouts so the watch display can match the phone</li>
+  </ul>
+  <p>Heart-rate readings and the profile fields you enter for zones (age, weight, height, and any limits you set) are processed <strong>on your device</strong>. We do <strong>not</strong> receive BPM, zone settings, or your paired strap identifier on our servers. Pairing is <strong>optional</strong> and <strong>user-initiated</strong>. You can forget the strap or turn the feature off in Settings; the timer works without a heart-rate monitor.</p>
+
+  <h3>3.5 App version display</h3>
   <p>The app may read its own version and build number from the device (for example to show “v1.0.1” in Settings). This is used for display only and is not sent to us.</p>
 
-  <h3>3.5 Share (optional)</h3>
+  <h3>3.6 Share (optional)</h3>
   <p>If you tap <strong>Share</strong> on a workout summary, the app renders a <strong>PNG image</strong> into temporary app storage and opens Android’s <strong>system share sheet</strong>. You choose the recipient app (messages, email, cloud storage, etc.). <strong>We do not receive</strong> the image or summary. Any app you share with processes data under its own privacy policy.</p>
 
-  <h3>3.6 Online drills and exercise how-to pack (optional)</h3>
+  <h3>3.7 Online drills and exercise how-to pack (optional)</h3>
   <p>If you use <strong>Check for online drills</strong> (or similar) under Templates, or download the optional <strong>exercise how-to</strong> image pack, the app may fetch <strong>public</strong> catalog JSON, workout templates, and illustration files from the public <strong>tabataCoreDrills</strong> repository on GitHub (for example via <code>raw.githubusercontent.com</code> or GitHub Pages). Those requests download content onto your device so you can import templates or view how-to images offline afterward.</p>
   <ul>
     <li>Downloaded drills and images are stored in <strong>app storage on your device</strong>.</li>
