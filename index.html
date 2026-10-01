@@ -32,12 +32,12 @@
   <p>Tabata Core is a <strong>local</strong> fullscreen timer for Tabata/HIIT workouts and optional reaction-style training, sold on Google Play as a <strong>one-time paid app</strong> (no subscription). In the current version:</p>
   <ul>
     <li>You are <strong>not required to create an account</strong>.</li>
-    <li>Your workout settings, templates, and session data are stored <strong>on your device</strong> unless you choose to share something using Android’s share feature.</li>
+    <li>Your workout settings, plans, and session data are stored <strong>on your device</strong> unless you choose to share something using Android’s share feature.</li>
     <li>We <strong>do not</strong> sell your personal information, show in-app advertising, or use analytics or crash-reporting SDKs that identify you.</li>
     <li>We <strong>do not</strong> receive your workout data on our own servers.</li>
     <li>Optional <strong>Tabata Core StopWatch</strong> companion sync uses <strong>Bluetooth</strong> only between your phone and your watch when you turn sync on—not for location, ads, or uploading data to us.</li>
     <li>Optional <strong>heart-rate monitor</strong> pairing uses a separate <strong>Bluetooth</strong> link to a compatible chest strap or band; BPM and related settings stay on your device (and may be shown on a paired StopWatch during a companion workout).</li>
-    <li>Optional <strong>online drills</strong> and <strong>exercise how-to images</strong> are downloaded from a <strong>public GitHub</strong> catalog; the app does <strong>not</strong> upload your workouts or identity with those requests.</li>
+    <li>Optional <strong>online plans</strong> and <strong>exercise how-to images</strong> are downloaded from a <strong>public GitHub</strong> catalog; the app does <strong>not</strong> upload your workouts or identity with those requests.</li>
     <li>Optional <strong>progress backup</strong> export/import writes or reads a file you choose on your device (or via Android’s share sheet); that file is <strong>not</strong> uploaded to Tabata Core servers.</li>
   </ul>
 
@@ -48,7 +48,7 @@
   <p>Saved using Android app storage (for example <code>SharedPreferences</code>), including:</p>
   <ul>
     <li>Tabata structure: sets, reps, work/rest durations, optional warmup and cooldown</li>
-    <li>Saved <strong>Tabata templates</strong> (names and interval settings you keep)</li>
+    <li>Saved <strong>Tabata plans</strong> (names and interval settings you keep)</li>
     <li>Sound, vibration, theme, colours, screen dimming, and reaction-training options</li>
     <li>Notification, wake-lock, and phone-call pause preferences</li>
     <li>Optional <strong>StopWatch sync</strong> on/off preference</li>
@@ -92,14 +92,14 @@
   <h3>3.6 Share (optional)</h3>
   <p>If you tap <strong>Share</strong> on a workout summary, the app renders a <strong>PNG image</strong> into temporary app storage and opens Android’s <strong>system share sheet</strong>. You choose the recipient app (messages, email, cloud storage, etc.). <strong>We do not receive</strong> the image or summary. Any app you share with processes data under its own privacy policy.</p>
 
-  <h3>3.7 Online drills and exercise how-to pack (optional)</h3>
-  <p>If you use <strong>Check for online drills</strong> (or similar) under Templates, or download the optional <strong>exercise how-to</strong> image pack, the app may fetch <strong>public</strong> catalog JSON, workout templates, and illustration files from the public <strong>tabataCoreDrills</strong> repository on GitHub (for example via <code>raw.githubusercontent.com</code> or GitHub Pages). Those requests download content onto your device so you can import templates or view how-to images offline afterward.</p>
+  <h3>3.7 Online plans and exercise how-to pack (optional)</h3>
+  <p>If you use <strong>Get online plans</strong> (or similar) under Plans, or download the optional <strong>exercise how-to</strong> image pack, the app may fetch <strong>public</strong> catalog JSON, workout plans, and illustration files from the public <strong>tabataCoreDrills</strong> repository on GitHub (for example via <code>raw.githubusercontent.com</code> or GitHub Pages). Those requests download content onto your device so you can import plans or view how-to images offline afterward.</p>
   <ul>
-    <li>Downloaded drills and images are stored in <strong>app storage on your device</strong>.</li>
+    <li>Downloaded plans and images are stored in <strong>app storage on your device</strong>.</li>
     <li>The app does <strong>not</strong> send your workout history, settings, account identity, or progress backup in those requests.</li>
     <li>GitHub (or your network provider) may see ordinary technical connection data (such as IP address and request timing) under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>; we do not operate that infrastructure and do not receive your workout data through it.</li>
   </ul>
-  <p>Using online drills or the how-to pack is <strong>optional</strong>. The timer works without them.</p>
+  <p>Using online plans or the how-to pack is <strong>optional</strong>. The timer works without them.</p>
 
   <h2>4. Features that use device capabilities</h2>
   <p>While you use the app, it may use the following <strong>on-device</strong> capabilities. None of these upload your workout data to us:</p>
@@ -112,7 +112,7 @@
     <li><strong>Phone-call pause (optional):</strong> if enabled, the app may pause when Android reports ringtone or in-call audio mode. The app uses <strong>audio mode only</strong> and does <strong>not</strong> read your phone number, call log, or contacts.</li>
     <li><strong>Screen dimming (optional):</strong> reduces brightness during Tabata workouts until you tap to brighten; preference stored locally.</li>
     <li><strong>Bluetooth / Nearby devices (optional):</strong> scan for and connect to a Tabata Core StopWatch for companion sync when you choose Scan &amp; pair. Not used for location, advertising, or discovering unrelated devices beyond compatible StopWatch hardware.</li>
-    <li><strong>Internet (optional):</strong> download public online drills and exercise how-to images from GitHub when you choose those features; no upload of your workout data to us.</li>
+    <li><strong>Internet (optional):</strong> download public online plans and exercise how-to images from GitHub when you choose those features; no upload of your workout data to us.</li>
   </ul>
 
   <h2>5. Android permissions</h2>
@@ -139,7 +139,7 @@
 
   <h2>7. Legal basis (EEA / UK)</h2>
   <p>Where the GDPR or UK GDPR applies, we process on-device information only to <strong>provide and operate the app</strong> you request (timer, settings, optional notifications and related features). We do not use your information for advertising, profiling, or direct marketing.</p>
-  <p>Our legal bases are typically <strong>performance of a contract</strong> (providing the app you download) and <strong>legitimate interests</strong> (operating and improving a secure local timer), balanced against your rights. Where processing depends on your choices (for example enabling notifications, StopWatch sync, granting Nearby devices permission, Share, progress backup export/import, or downloading online drills or how-to images), it is based on your <strong>consent</strong> through those system or in-app choices.</p>
+  <p>Our legal bases are typically <strong>performance of a contract</strong> (providing the app you download) and <strong>legitimate interests</strong> (operating and improving a secure local timer), balanced against your rights. Where processing depends on your choices (for example enabling notifications, StopWatch sync, granting Nearby devices permission, Share, progress backup export/import, or downloading online plans or how-to images), it is based on your <strong>consent</strong> through those system or in-app choices.</p>
 
   <h2>8. Retention</h2>
   <p>Information stored by the app remains on your device until you:</p>
