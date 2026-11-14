@@ -1,14 +1,16 @@
 ﻿# tabata-core-privacy
 
-Public privacy policy for **Tabata Core** (Google Play). Static site: `index.html` only.
+Public privacy policy and terms for **Tabata Core** (Google Play). Static pages: `index.html` and `terms.html`.
 
-**Live URL:** https://tasosstyl1984.github.io/tabata-core-privacy/
+**Privacy URL:** https://tasosstyl1984.github.io/tabata-core-privacy/
+**Terms URL:** https://tasosstyl1984.github.io/tabata-core-privacy/terms.html
 
 ## Enable GitHub Pages
 
 1. On GitHub: **Settings → Pages → Build and deployment → Source**: *Deploy from a branch*.
 2. Branch **main**, folder **/ (root)**.
-3. Policy URL for Play Console: `https://tasosstyl1984.github.io/tabata-core-privacy/`
+3. Privacy URL for Play Console: `https://tasosstyl1984.github.io/tabata-core-privacy/`
+4. Terms URL for Play Console: `https://tasosstyl1984.github.io/tabata-core-privacy/terms.html`
 
 Contact email is in `index.html` (`tasos.styl@gmail.com`). Update there if it changes, then push to `main`.
 
